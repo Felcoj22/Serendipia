@@ -3,6 +3,7 @@ body{
     color: #333;
     font-size: 1.2rem;
     line-height: 1.4em;
+    margin: 0;
 }
 
 h1{
@@ -15,7 +16,50 @@ p{
 }
 
 .Contenedor{
-    width: 85%;
-    max-width: 850px;
+    width: 95%;
+    max-width: 1020px;
     margin: 0 auto;
 }
+
+.Cabecera{
+    background: #eee;
+    color: white;
+    padding: 0.2rem 0;
+}
+
+    .Cabecera a{
+        color: #A19B9A;
+        text-decoration: none;
+    }
+
+        .Cabecera a img{
+            width: 30%;
+            height: 30%;
+        }
+
+.logo-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Navegacion ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    .Navegacion ul li{
+        display: inline-block;
+    }
+
+        .Navegacion ul li a{
+            display: block;
+            padding: 0.5rem 1rem;
+            transition: all 0.4s linear;
+            border-radius: 5px;
+        }
+
+            .Navegacion ul li a:hover{
+                background: #ccc;
+            }

@@ -2,7 +2,7 @@ body{
     font-family: Georgia, Times, serif;
     color: #333;
     font-size: 1.2rem;
-    line-height: 1.4em;
+    line-height: 1.6em;
     margin: 0;
 }
 
@@ -22,9 +22,9 @@ p{
 }
 
 .Cabecera{
-    background: #eee;
+    background: #eeeeee;
     color: white;
-    padding: 0.2rem 0;
+    padding: 0.5rem 0;
 }
 
     .Cabecera a{
@@ -33,11 +33,11 @@ p{
     }
 
         .Cabecera a img{
-            width: 30%;
-            height: 30%;
+            width: 7rem;
+            height: 7rem;
         }
 
-.logo-nav{
+.Logo-Nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -61,5 +61,18 @@ p{
         }
 
             .Navegacion ul li a:hover{
-                background: #ccc;
+                background: rgb(227, 228, 229);
             }
+
+.Pie{
+    background: #f7af9f;
+    padding: 2rem 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+    .Pie a{
+        color: white;
+        text-decoration: none
+    }

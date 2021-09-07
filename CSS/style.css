@@ -25,6 +25,11 @@ p{
     background: #eeeeee;
     color: white;
     padding: 0.5rem 0;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
 }
 
     .Cabecera a{
@@ -41,6 +46,11 @@ p{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.Menu-Icon{
+    display: none;
 }
 
 .Navegacion ul{
@@ -61,18 +71,68 @@ p{
         }
 
             .Navegacion ul li a:hover{
-                background: rgb(227, 228, 229);
+                background: #f7af9f;
             }
+
+.Principal{
+    padding-top: 12rem;
+}
 
 .Pie{
     background: #f7af9f;
     padding: 2rem 0;
     text-align: center;
+    margin-top: 6rem;
     display: flex;
     justify-content: space-between;
 }
+
+    .Pie p{
+        font-size: 14px;
+    }
 
     .Pie a{
         color: white;
         text-decoration: none
     }
+
+
+@media only screen and (max-width: 600px){
+    .Menu-Icon{
+        display: block;
+        cursor: pointer;
+        padding: 0.5;
+    }
+        .Menu-Icon img{
+            width: 2rem;
+            height: 2rem;
+        }
+
+    .Navegacion{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+        .Navegacion ul{
+            display: none;
+        }
+
+        .Navegacion ul.Mostrar{
+            display: block;
+        }
+
+            .Navegacion ul li{
+                display: block;
+            }
+
+                .Navegacion ul li a{
+                    display: block;
+                    padding: 0.5rem 0;
+                    transition: all 0.4s linear;
+                    border-radius: 5px;
+                }
+
+                    .Navegacion ul li a:hover{
+                        background: #f7af9f;
+                    }
+}

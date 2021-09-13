@@ -1,6 +1,28 @@
-.Cont img{
-    width: 70rem;
-    height: 20rem;
-    display: block;
+.Ban img{
+    width: 66.5rem;
+    height: 23.4rem;
+    display: flex;
     margin: auto;
+}
+
+.Catalogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+    .Catalogo img{
+    width: 13.6rem;
+    height: 14.9rem;
+    margin: 1rem;
+    }
+
+@media only screen and (max-width: 700px){
+    .Ban img{
+        width: 44.3rem;
+        height: 15.6rem;
+        display: flex;
+        margin: auto;
+    }
 }

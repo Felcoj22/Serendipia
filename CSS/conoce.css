@@ -78,12 +78,13 @@ p{
 .Principal{
     padding-top: 12rem;
     text-align: justify;
+    padding-bottom: 10rem;
 }
     .Principal img{
         float: right;
-        width: 500px;
-        height: 650px;
-        padding-left: 50px;
+        width: 26.25rem;
+        height: 31.25rem;
+        padding-left: 3.125rem;
     }
 
 

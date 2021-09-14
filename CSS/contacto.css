@@ -1,0 +1,61 @@
+.Contacto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.Contacto-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+
+}
+.Contacto-item:hover{
+    background-color: #F7AF9F;
+}
+
+.Contacto-item img{
+    width: 65px;
+    height:65px;
+}
+
+.Contacto-item h3{
+    cursor: pointer;
+    width: 300px;
+    padding-left: 8px;
+}
+
+.Contacto-item a{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.mapa{
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+}
+
+@media only screen and (max-width: 380px){
+    .mapa{
+    padding-left: 30px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    }
+
+    .Contacto-item img{
+        width: 40px;
+        height:40px;
+    }
+
+    .Contacto-item h3{
+        cursor: pointer;
+        width: 250px;
+        padding-left: 8px;
+        font-size: 18px;
+    }
+}
+

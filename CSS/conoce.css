@@ -6,6 +6,7 @@
         float: right;
         width: 26.25rem;
         height: 31.25rem;
+        padding-top: 3.5rem;
         padding-left: 3.125rem;
     }
 
@@ -16,8 +17,8 @@
 
     .Principal img{
         float: right;
-        width: 250px;
-        height: 325px;
-        padding-left: 50px;
+        width: 15.63rem;
+        height: 20.31rem;
+        padding-left: 3.13rem;
     }
 }

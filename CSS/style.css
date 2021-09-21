@@ -21,32 +21,46 @@ p{
     margin: 0 auto;
 }
 
-.Cabecera{
-    background: #eeeeee;
-    color: white;
-    padding: 0.5rem 0;
-
+.cabecera{
+    width: 100% ;
     position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
+    background: #eeeeee;
 }
 
-    .Cabecera a{
-        color: #A19B9A;
-        text-decoration: none;
-    }
-
-        .Cabecera a img{
-            width: 7rem;
-            height: 7rem;
-        }
-
-.Logo-Nav{
-    display: flex;
+.cabecera__contenido{
+    display : flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    padding : 0 5%;
+}
+
+.cabecera__navegacion--lista{
+    display : flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+}
+
+.cabecera__navegacion--lista-item{
+    padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    margin: 0 .2rem;
+}
+
+.cabecera__navegacion--lista-item a{
+    color : #A19B9A;
+    text-decoration : none;
+}
+
+.cabecera__navegacion--lista-item:hover {
+    background: #f7af9f;
+}
+
+
+.cabecera__logo--img{
+    width: 7rem;
+    height: 7rem;
 }
 
 .Menu-Icon{
@@ -74,9 +88,21 @@ p{
                 background: #f7af9f;
             }
 
+.cabecera__usuario--contenedor{
+    width: 4rem;
+    height: 4rem;
+    border-radius : 50%;
+    background-color: white;
+}
+
+.cabecera__usuario--icono{
+    width: 4rem;
+    height: 4rem;
+}
+
 .Principal{
-    padding-top: 12rem;
-    width: 100vw;
+    padding-top: 9rem;
+    width: 100%;
 }
 
 .Pie{
@@ -95,7 +121,7 @@ p{
 
     .Pie a{
         color: white;
-        text-decoration: none
+        text-decoration: none;
     }
 
 

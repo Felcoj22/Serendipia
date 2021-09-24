@@ -63,9 +63,22 @@ p{
     height: 7rem;
 }
 
+.cabecera__usuario--contenedor{
+    width: 4rem;
+    height: 4rem;
+    border-radius : 50%;
+    background-color: white;
+}
+
+.cabecera__usuario--icono{
+    width: 4rem;
+    height: 4rem;
+}
+
 .Menu-Icon{
     display: none;
 }
+
 
 .Navegacion ul{
     margin: 0;
@@ -88,17 +101,6 @@ p{
                 background: #f7af9f;
             }
 
-.cabecera__usuario--contenedor{
-    width: 4rem;
-    height: 4rem;
-    border-radius : 50%;
-    background-color: white;
-}
-
-.cabecera__usuario--icono{
-    width: 4rem;
-    height: 4rem;
-}
 
 .Principal{
     padding-top: 9rem;
@@ -109,7 +111,7 @@ p{
     background: #f7af9f;
     padding: 2rem 0;
     text-align: center;
-    margin-top: 6rem;
+    margin-top: 1rem;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -117,6 +119,7 @@ p{
 
     .Pie p{
         font-size: 14px;
+        margin : 0;
     }
 
     .Pie a{

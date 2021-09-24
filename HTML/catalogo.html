@@ -12,20 +12,40 @@
 </head>
 
 <body>
-    <header class="Cabecera">
-        <div class="Contenedor Logo-Nav">
-            <a href="../index.html" class="Logo">
-                <img src="../Imagenes/logoSerendipia.png" alt="Logo Serendipia">
+    <header class="cabecera">
+        <div class="cabecera__contenido">
+            <a href="../index.html">
+                <img class="cabecera__logo--img" src="../Imagenes/logoSerendipia.png" alt="Logo Serendipia">
             </a>
-            <span class="Menu-Icon">
-                <img src="../Imagenes/menu.svg" alt="Menu">
-            </span>
-            <nav class="Navegacion">
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="#">Cátalogo</a></li>
-                    <li><a href="conocenos.html">Conocenos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+            <!--
+            <div class="Menu-Icon">
+                <img src="Imagenes/menu.svg" alt="Menu">
+            </div>
+            -->
+            <nav class="cabecera__navegacion">
+                <ul class="cabecera__navegacion--lista">
+                    <li class="cabecera__navegacion--lista-item"><a href="../index.html">Inicio</a></li>
+                    <li class="cabecera__navegacion--lista-item"><a href="../HTML/catalogo.html">Cátalogo</a></li>
+                    <li class="cabecera__navegacion--lista-item"><a href="../HTML/conocenos.html">Conocenos</a></li>
+                    <li class="cabecera__navegacion--lista-item"><a href="../HTML/contacto.html">Contacto</a></li>
+                    <div class="cabecera__usuario--contenedor">
+                        <img class="cabecera__usuario--icono" src="../Imagenes/user.svg">
+                    </div>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="cabecera__menu">
+            <nav class="cabecera__lista">
+                <ul class="cabecera__lista--accesorios">
+                    <li class="cabecera__lista--accesorios-item"><a href="#">Aretes</a></li>
+                    <li class="cabecera__lista--accesorios-item"><a href="#">Piercing</a></li>
+                    <li class="cabecera__lista--accesorios-item"><a href="#">Collares</a></li>
+                    <li class="cabecera__lista--accesorios-item"><a href="#">Anillos</a></li>
+                    <li class="cabecera__lista--accesorios-item"><a href="#">Pulseras</a></li>
+                    <li class="cabecera__lista--accesorios-item"><a href="#">Tobilleras</a></li>
+                    <li class="cabecera__lista--accesorios-item"><a href="#">Complementos</a></li>
+                    <li class="cabecera__lista--accesorios-item"><a href="#">Cases</a></li>
                 </ul>
             </nav>
         </div>
@@ -33,18 +53,24 @@
 
     <main class="Principal">
         <div class="Contenedor">
-            <h1>
-                ¿QUIENES SOMOS?
-            </h1>
-            <img src="../Imagenes/QuienesSomos.png">
-
-            <br>
-            <p>Serendipia Accesorios es una empresa colombiana que brinda bisutería y accesorios llamativos y de buena calidad, para los gustos desde las más pequeñas a las más grandes. 
-                Nuestras joyas están hechas en materiales de alta calidad, como el acero quirúrgico, cover gold y  oro Golfi, así que no te maltratarán ni te generarán alergias.
-                Además, al ser tan livianas, son ideales para que las uses todos los días.</p>
-            <br>
-            <strong>¡Dale un toque de glam a tus días!</strong>
-
+            <div class="contenedor__imagenes">
+                <!--
+                <div class="contenedor__visualiza-producto">
+                    <img src="../Imagenes/1.png" alt="">
+                    <p>Hola</p>
+                    <p>Adios</p>
+                    <img class="" src="../Imagenes/favorito.svg" alt="">
+                </div>-->
+                <img src="../Imagenes/1.png" alt="">
+                <img src="../Imagenes/3.png" alt="">
+                <img src="../Imagenes/5.png" alt="">
+                <img src="../Imagenes/aretas.png" alt="">
+                <img src="../Imagenes/aretas2.png" alt="">
+                <img src="../Imagenes/IMG_20210831_162556.jpg" alt="">
+                <img src="../Imagenes/IMG_20210831_221049.jpg" alt="">
+                <img src="../Imagenes/luna.png" alt="">
+                <img src="../Imagenes/Sin título-2.png" alt="">
+            </div>
         </div>
     </main>
 
@@ -54,7 +80,7 @@
                 <ul>
                     <li><a href="conocenos.html">Conocenos</a></li>
                     <li><a href="#">Terminos y condiciones</a></li>
-                    <li><a href="#">Catálogo</a></li>
+                    <li><a href="catalogo.html">Catálogo</a></li>
                 </ul>
             </nav>
             <br>

@@ -58,13 +58,12 @@
     text-align: center;
     justify-content: center;
 }
-    .Conoce p{
-        padding-right: 10rem;
-    }
+
+.info__container{
+    text-align: center;
+}
 
 .boton__conocenos{
-    text-align: center;
-    justify-content: center;
     text-decoration: none;
     color: #ffffff;
     border: 0.06rem;

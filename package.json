@@ -1,0 +1,24 @@
+{
+  "name": "serendipia",
+  "version": "0.1.0",
+  "description": "Proyecto coloborativo Tecnologias de Internet UMNG ft. serendipia",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Felcoj22/Serendipia.git"
+  },
+  "keywords": [
+    "umng",
+    "merch",
+    "store"
+  ],
+  "author": "Juan Correa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Felcoj22/Serendipia/issues"
+  },
+  "homepage": "https://github.com/Felcoj22/Serendipia#readme"
+}

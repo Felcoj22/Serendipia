@@ -1,14 +1,18 @@
-.Principal{
-    text-align: justify;
+.contenedor__conocenos{
+    display: flex;
+    text-align: left;
     padding-bottom: 10rem;
 }
-    .Principal img{
-        float: right;
-        width: 26.25rem;
-        height: 31.25rem;
-        padding-top: 3.5rem;
-        padding-left: 3.125rem;
-    }
+.conocenos__titulo{
+    text-align: center;
+}
+.contenedor__conocenos-img{
+    float: right;
+    width: 26.25rem;
+    height: 31.25rem;
+    padding-top: 3.5rem;
+    padding-left: 3.125rem;
+}
 
 @media only screen and (max-width: 600px){
     h1, h2{

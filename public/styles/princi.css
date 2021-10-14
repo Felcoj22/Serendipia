@@ -3,6 +3,9 @@
     justify-content: center;
     margin: auto;
 }
+.img-banner{
+    width: 100%;
+}
 
 .contenedor__catalogo{
     display: flex;
@@ -48,15 +51,20 @@
     text-align: left;
     justify-content: center;
 }
+.img__container-conocenos img{
+    width: 20rem;
+    border-radius: 25%;
+}
 
 .info__container{
+    display: inline-block;
     text-align: center;
     padding-left: 1rem;
 }
 
 .info__container p{
     text-align: left;
-    padding-bottom: 1rem;
+    padding: 1rem 5rem;
 }
 
 .boton__conocenos{
@@ -67,6 +75,10 @@
     padding: 0.5rem;
     background-color: #f7af9f;
     border-radius: 3.13rem;
+}
+
+.contenedor__conoce-imagen{
+    width: 2.5rem;
 }
 
 @media only screen and (max-width: 700px){

@@ -1,6 +1,5 @@
 .contenedor__conocenos{
-    display: grid;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 .conocenos__titulo{
     text-align: center;
@@ -8,15 +7,20 @@
     margin: 1rem 0;
 }
 
-.contenedor__conocenos-img{
-    display: inline-block;
-    text-align: center;
+.contenedor__conocenos-info{
+display: flex;
+text-align: center;
 }
-.contenedor__conocenos-img img{
+
+.contenedor__conocenos-info p{
+padding: 0 1.5rem;
+}
+
+.img-conocenos{
     width: 15rem;
-    height: 20rem;
     border-radius: 50%;
-    padding: 0 0.5rem;
+    border-style: solid;
+    border-color: #AB7265;
 }
 
 .strong-info{

@@ -1,5 +1,7 @@
 .contenedor__conocenos{
     margin-bottom: 2rem;
+    text-align: center;
+    justify-content: center;
 }
 .conocenos__titulo{
     text-align: center;
@@ -8,19 +10,21 @@
 }
 
 .contenedor__conocenos-info{
-display: flex;
-text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: center;
 }
 
 .contenedor__conocenos-info p{
-padding: 0 1.5rem;
+    padding: 0 1.5rem;
 }
 
 .img-conocenos{
-    width: 15rem;
+    width: 18vw;
+    height: 18vw;
     border-radius: 50%;
-    border-style: solid;
-    border-color: #AB7265;
+    justify-self: center;
+    align-self: center;;
 }
 
 .strong-info{
@@ -30,15 +34,31 @@ padding: 0 1.5rem;
     padding-top: 1rem;
 }
 
-@media only screen and (max-width: 600px){
-    h1, h2{
-        text-align: center;
+@media only screen and (max-width: 900px){
+    .contenedor__conocenos-info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr minmax(min-content, auto);
+        justify-content: center;
     }
 
-    .Principal img{
-        float: right;
-        width: 15.63rem;
-        height: 20.31rem;
-        padding-left: 3.13rem;
+    .contenedor__conocenos-info p{
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding: 10px 40px;
+    }
+    .img-conocenos1{
+        justify-self: right;
+        margin-right: 5%;
+        width: 140px;
+        height: 140px;
+    }
+    .img-conocenos2{
+        justify-self: left;
+        margin-left: 5%;
+        width: 140px;
+        height: 140px;
     }
 }
+

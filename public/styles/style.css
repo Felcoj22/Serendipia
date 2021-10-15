@@ -36,11 +36,18 @@ h1{
     padding : 0 5%;
 }
 
+.cabecera__navegacion{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .cabecera__navegacion--lista{
     display : flex;
     flex-direction: row;
     list-style: none;
     align-items: center;
+    margin-right: 1rem;
+    flex-wrap: wrap;
 }
 
 .cabecera__navegacion--lista-item{
@@ -146,10 +153,6 @@ h1{
         margin-top: 1rem;
     }
 
-        .Navegacion ul{
-            display: none;
-        }
-
         .Navegacion ul.Mostrar{
             display: block;
         }
@@ -169,3 +172,24 @@ h1{
                         background: #f7af9f;
                     }
 }
+
+@media only screen and (max-width: 700px){
+    .cabecera__usuario--contenedor{
+        display: none;
+    }
+    .cabecera__navegacion--lista{
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 410px){
+    .cabecera__contenido{
+        flex-direction: column;
+    }
+
+    .Principal{
+    padding-top: 14rem;
+    width: 100%;
+}
+}
+

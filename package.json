@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Felcoj22/Serendipia/issues"
   },
-  "homepage": "https://github.com/Felcoj22/Serendipia#readme"
+  "homepage": "https://github.com/Felcoj22/Serendipia#readme",
+  "dependencies": {
+    "firebase": "^9.1.3"
+  }
 }

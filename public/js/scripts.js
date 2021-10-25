@@ -1,6 +1,9 @@
-import { initializeApp } from 'firebase/app';
-import { firebaseConfig } from './config/firebaseConfig'
+// import firebaseConfig from './modules/firebaseConfig'
 
-const app = initializeApp(firebaseConfig);
+// import { initializeApp } from 'firebase/app';s
 
-console.log('Testing firebase information :', app)
+// console.log(firebaseConfig, 'hola')
+
+//const app = initializeApp(firebaseConfig);
+
+//console.log('Testing firebase information :', app)

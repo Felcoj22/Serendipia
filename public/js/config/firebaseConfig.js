@@ -10,15 +10,25 @@ const firebaseConfig = {
   appId: "1:719997928089:web:85eb7d5ceb98db94c6ee08"
 };
 
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+const appFirebase = initializeApp(firebaseConfig);
+const dbFirebase = getFirestore(appFirebase);
 
-// Get a list of cities from your database
-async function getRings(db) {
-  const anillosProductos = collection(db, 'anillos');
-  console.log('soy la coleccion de anillos', anillosProductos)
-  const ringSnapshot = await getDocs(anillosProductos);
-  const gettingRing = ringSnapshot.docs.map(doc => console.log('este es un doc:', doc));
+const getRings = async (db) => {
+  const ringsDocs = await getDocs(collection(db, 'anillos'));
+  ringsDocs.forEach(element => {
+    console.log(element.data())
+  });
 }
 
-getRings(db)
+async function getRings2(db) {
+  const ringsCol = collection(db, 'anillos');
+  const ringSnapshot = await getDocs(ringsCol);
+  const ringsList = ringSnapshot.docs.map(doc => doc.data());
+  console.log(ringsList)
+  return ringsList;
+}
+
+getRings(dbFirebase)
+getRings2(dbFirebase)
+
+export default { appFirebase, dbFirebase, getRings }

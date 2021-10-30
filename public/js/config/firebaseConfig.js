@@ -1,5 +1,5 @@
-import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js'
-import { getFirestore, collection, getDocs } from 'https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js'
+import { initializeApp } from 'firebase/app'
+import { getFirestore, collection, getDocs } from 'firebase/firestore'
 
 const firebaseConfig = {
   apiKey: "AIzaSyDeuiXHndRdCnctGap8UFLSQNQz0j_Vqb4",
@@ -28,7 +28,7 @@ async function getRings2(db) {
   return ringsList;
 }
 
-getRings(dbFirebase)
-getRings2(dbFirebase)
+// getRings(dbFirebase)
+// getRings2(dbFirebase)
 
-export default { appFirebase, dbFirebase, getRings }
+export { appFirebase, dbFirebase, getRings, getRings2 }

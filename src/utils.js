@@ -1,0 +1,1 @@
+export const testingModules = () => console.log('Hola Serendipia')

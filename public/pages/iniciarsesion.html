@@ -11,15 +11,20 @@
     </head>
 
     <body>
-        <img src="../img/logoSerendipia.png" alt="Logo Serendipia">
-        <br>
-        <label> <input type="email" name="Correo" placeholder="Correo"></label>
-        <br>
-        <label> <input type="password" name="Contraseña" placeholder="Contraseña"></label>
-        <br>
-
-        <input type="button" name="Ingresa" value="Ingresa">
-        <input type="button" name="Registrarte" value="Registrarte">
-
+        <div class="contenedor_inicio"> 
+            <div class="contendor_inicio-info">
+                <div class="imagen">
+                    <img class="logo" src="../img/logoSerendipia.png" alt="Logo Serendipia">
+                </div>
+                <div class="informacion">
+                    <label class="info"> <input type="email" name="Correo" placeholder="Correo"></label>
+                    <label class="info"> <input type="password" name="Contraseña" placeholder="Contraseña"></label>
+                </div>
+                <div class="botones">
+                    <a class="boton_inicio" href="./public/index">Ingresa</a>
+                    <a class="boton_registro" href="./public/index">Registrate</a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

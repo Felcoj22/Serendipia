@@ -6,23 +6,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Serendipia</title>
         <link rel="stylesheet" href="../styles/style.css">
-        <link rel="stylesheet" href="../styles/iniciarsesion.css">
+        <link rel="stylesheet" href="../styles/registro.css">
         <link rel="Icon" href="../img/logoSerendipia.png" type="img/x-icon">
     </head>
 
     <body>
-        <img src="../img/logoSerendipia.png" alt="Logo Serendipia">
-        <br>
-        <label> <input type="text" name="Nombres y Apellidos" placeholder="Nombres"></label>
-        <br>
-        <label> <input type="email" name="Correo" placeholder="Correo"></label>
-        <br>
-        <label> <input type="text" name="Telefono" placeholder="Teléfono"></label>
-        <br>
-        <label> <input type="password" name="Contraseña" placeholder="Contraseña"></label>
-        <br>
-        <label><input type="checkbox" /> Acepto política de tratamiento de datos personales.</label>
-        <br>
-        <input type="button" name="Registrate" value="Regístrate">
+        <div class="contenedor_inicio">
+            <div class="contendor_inicio-info">
+                <div class="imagen">
+                    <img class="logo" src="../img/logoSerendipia.png" alt="Logo Serendipia">
+                </div>
+                <div class="informacion">
+                    <label class="info"> <input type="text" name="Nombres y Apellidos" placeholder="Nombres"></label>
+                    <label class="info"> <input type="email" name="Correo" placeholder="Correo"></label>
+                    <label class="info"> <input type="text" name="Telefono" placeholder="Teléfono"></label>
+                    <label class="info"> <input type="password" name="Contraseña" placeholder="Contraseña"></label>
+                </div>
+                <div class="politicas">
+                    <label> <input type="checkbox" /> Acepto política de tratamiento de datos personales.</label>
+                </div>
+                <div class="botones">
+                    <a class="boton_registro" href="../index.html">Registrate</a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

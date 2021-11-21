@@ -1,23 +1,26 @@
 class productCard extends HTMLElement {
     constructor() {
         super();
-        this.attachShadow({ mode: 'open' })
+        this.shadow = this.attachShadow({ mode: 'open' })
     }
 
-    getTemplate() {
+    /*getTemplate() {
         let name = 'Felipeco'
         const template = document.createElement('card')
         template.innerHTML = `<div>${name}</div>`
         return template
-    }
-
-    render() {
-        this.shadowRoot.appendChild(this.getTemplate().content.cloneNode(true))
-    }
+    }*/
 
     connectedCallback() {
         this.render();
     }
 
+    render() {
+        //this.shadow.appendChild(this.getTemplate().content.cloneNode(true))
+        let name = 'Felipeco'
+        this.shadow.innerHTML = `<div> ${name}</div>`
+    }
+
 }
-customElements.define("product-card", productCard)
+
+customElements.define('product-card', productCard)

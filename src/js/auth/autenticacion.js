@@ -1,3 +1,1 @@
-function registrar() {
-    console.log('click')
-}
+console.log('me importan')

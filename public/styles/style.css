@@ -17,6 +17,18 @@ h1{
     line-height: 1.3em;
 }
 
+button{
+    text-decoration: none;
+    color: #f7af9f;
+    border: solid;
+    border-width: 0.15em;
+    border-color:#f7af9f;
+    padding: 0.63rem;
+    background-color: #ffffff;
+    width: 10rem;
+    line-height: 1;
+}
+
 .Contenedor{
     width: 100%;
     max-width: 1020px;

@@ -17,7 +17,7 @@ body{
     justify-content: center;
     text-align: center; 
     width: 35%;
-    height: 1000px;
+    height: 100%;
     background-color: white;
     background-color: rgba(255, 255, 255, 0.6);
     border: solid;
@@ -64,6 +64,19 @@ body{
 }
 
 .boton_registro{
+    text-decoration: none;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    color: #f7af9f;
+    border: none;
+    padding: 0.63rem;
+    background-color: #ffffff;
+    width: 10rem;
+    line-height: 1;
+}
+
+.botones a{
     text-decoration: none;
     color: #f7af9f;
     border: solid;

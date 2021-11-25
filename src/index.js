@@ -1,6 +1,7 @@
 import { testingModules } from "./utils";
 import { productCard } from "./js/components/productCard"
 import { Nombre, auth, createNewUser } from './js/auth/autenticacion'
+import { getEarings, getEarings2, dbFirebase } from './js/data/dataSamples'
 
 console.log(`Hola ${Nombre}`)
 const exampleMail = 'U56ASDASD@unimitar.edu.co'
@@ -9,7 +10,7 @@ const ourAuth = auth
 
 createNewUser(ourAuth, exampleMail, examplePassword)
 
-// testingModules()
+getEarings(dbFirebase)
+getEarings2(dbFirebase)
 
-//getRings(dbFirebase)
-//getRings2(dbFirebase)
+// testingModules()

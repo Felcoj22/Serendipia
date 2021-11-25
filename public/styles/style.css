@@ -136,8 +136,20 @@ h1{
         text-decoration: none;
     }
 
+@media only screen and (max-width: 1100px){
+    button{
+        border: none;
+        width: 8rem;
+    }
+}
 
 @media only screen and (max-width: 600px){
+
+    button{
+        border: none;
+        width: 5rem;
+    }
+
     .Menu-Icon{
         display: block;
         cursor: pointer;
@@ -174,9 +186,6 @@ h1{
 }
 
 @media only screen and (max-width: 700px){
-    .cabecera__usuario--contenedor{
-        display: none;
-    }
     .cabecera__navegacion--lista{
         justify-content: center;
     }

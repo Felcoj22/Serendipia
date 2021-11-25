@@ -1,7 +1,16 @@
 import { testingModules } from "./utils";
-import { getRings, getRings2, dbFirebase } from "../public/js/config/firebaseConfig"
+import { productCard } from "./js/components/productCard"
+import { Nombre, auth, createNewUser } from './js/auth/autenticacion'
+import { getEarings, getEarings2, dbFirebase } from './js/data/dataSamples'
 
-testingModules()
+console.log(`Hola ${Nombre}`)
+const exampleMail = 'U56ASDASD@unimitar.edu.co'
+const examplePassword = '1234567dsfds'
+const ourAuth = auth
 
-getRings(dbFirebase)
-getRings2(dbFirebase)
+createNewUser(ourAuth, exampleMail, examplePassword)
+
+getEarings(dbFirebase)
+getEarings2(dbFirebase)
+
+// testingModules()

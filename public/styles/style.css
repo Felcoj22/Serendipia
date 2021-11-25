@@ -17,18 +17,6 @@ h1{
     line-height: 1.3em;
 }
 
-button{
-    text-decoration: none;
-    color: #f7af9f;
-    border: solid;
-    border-width: 0.15em;
-    border-color:#f7af9f;
-    padding: 0.63rem;
-    background-color: #ffffff;
-    width: 10rem;
-    line-height: 1;
-}
-
 .Contenedor{
     width: 100%;
     max-width: 1020px;
@@ -148,8 +136,20 @@ button{
         text-decoration: none;
     }
 
+@media only screen and (max-width: 1100px){
+    button{
+        border: none;
+        width: 8rem;
+    }
+}
 
 @media only screen and (max-width: 600px){
+
+    button{
+        border: none;
+        width: 5rem;
+    }
+
     .Menu-Icon{
         display: block;
         cursor: pointer;
@@ -186,9 +186,6 @@ button{
 }
 
 @media only screen and (max-width: 700px){
-    .cabecera__usuario--contenedor{
-        display: none;
-    }
     .cabecera__navegacion--lista{
         justify-content: center;
     }

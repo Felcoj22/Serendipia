@@ -10,5 +10,5 @@ console.log('hola mama')
 
 // testingModules()
 
-// getRings(dbFirebase)
-// getRings2(dbFirebase)
+//getRings(dbFirebase)
+//getRings2(dbFirebase)

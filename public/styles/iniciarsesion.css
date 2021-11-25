@@ -17,7 +17,7 @@ body{
     justify-content: center;
     text-align: center;
     width: 35%;
-    height: 100%;
+    height: 750px;
     background-color: white;
     background-color: rgba(255, 255, 255, 0.6);
     border: solid;
@@ -50,8 +50,8 @@ body{
 }
 
 .logo{
-    width: 12rem;
-    height: 12rem;
+    width: 20rem;
+    height: 20rem;
 }
 
 .botones{
@@ -60,6 +60,31 @@ body{
     text-align: center;
     margin: 1rem;
     padding: 1rem;
+}
+
+.boton_inicio{
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    color: #f7af9f;
+    border: none;
+    padding: 0.63rem;
+    background-color: #ffffff;
+    width: 10rem;
+    line-height: 1;
+}
+
+.boton_registro{
+    text-decoration: none;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    color: #f7af9f;
+    border: none;
+    padding: 0.63rem;
+    background-color: #ffffff;
+    width: 10rem;
+    line-height: 1;
 }
 
 .botones a{
@@ -72,4 +97,30 @@ body{
     background-color: #ffffff;
     width: 10rem;
     line-height: 1;
+}
+
+@media only screen and (max-width: 1024px){
+    .logo{
+        width: 150px;
+        height: 150px;
+    }
+
+    .body{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .contenedor_inicio{
+        padding: 0 1rem;
+        width: 300px;
+        height: 100%;
+    }
+
+    .boton_registro{
+        width: 5rem;
+    }
+
+    .botones a{
+        width: 8rem;
+    }
 }

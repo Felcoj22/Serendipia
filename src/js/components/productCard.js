@@ -8,7 +8,6 @@ class productCard extends HTMLElement {
         let name = 'Felipeco'
         const template = document.createElement('card')
         template.innerHTML = `<div>${name}</div>`
-        return template
     }*/
 
     connectedCallback() {

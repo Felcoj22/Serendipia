@@ -1,10 +1,14 @@
 import { appFirebase } from '../config/firebaseConfig'
-import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword
+} from "firebase/auth";
 
 const auth = getAuth(appFirebase);
 
-const createNewUser = (authRef, correo, contrasena) => {
-  createUserWithEmailAndPassword(authRef, correo, contrasena)
+const createNewUser = (authRef, correo, contraseña) => {
+  createUserWithEmailAndPassword(authRef, correo, contraseña)
     .then((userCredential) => {
       // Signed in
       const user = userCredential.user;
@@ -19,9 +23,34 @@ const createNewUser = (authRef, correo, contrasena) => {
     });
 }
 
+const loginUser = (authRef, correo, contraseña) => {
+  signInWithEmailAndPassword(authRef, correo, contraseña)
+    .then((userLogged) => {
+      let user = userLogged.user;
+      console.log('userLogged', user)
+    })
+    .catch((error) => {
+      console.log('userNotLogged:', error.code, error.message)
+    })
+}
+
+const changeUserPasswordByEmail = (authRef, correo) => {
+  sendPasswordResetEmail(auth, email)
+    .then(() => {
+      // Password reset email sent!
+      // ..
+      console.log('email sended')
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.log('userCouldNotChangePassword', errorCode, errorMessage)
+      // ..
+    });
+}
 
 
-export { createNewUser, auth }
+export { auth, createNewUser, loginUser, changePassword, changeUserPasswordByEmail }
 
 
-export const Nombre = 'Andres'
+export const Nombre = 'Felipes'
